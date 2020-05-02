@@ -80,7 +80,7 @@ window.addEventListener("load", ()=>{
                humidityZone.textContent = " " + currentData.main.humidity +"%";
                pressureZone.textContent = " " + currentData.main.pressure + " Pa";
                windSpeed.textContent = " "+ currentData.wind.speed + " m/s , " + currentData.wind.deg +"°";
-               i0.innerHTML = '<img src="/icons/'+ currentData.weather[0].icon + '.svg" style="width: 90%">'
+               i0.innerHTML = '<img src="./icons/'+ currentData.weather[0].icon + '.svg" style="width: 90%">'
             })            
 
         fetch(api)
@@ -105,14 +105,14 @@ window.addEventListener("load", ()=>{
                d7.textContent = Math.round(data.list[6].main.temp) + "°C";
                s8.textContent = new Date(data.list[7].dt*1000).toLocaleTimeString("tr-TR").slice(0,5);
                d8.textContent = Math.round(data.list[7].main.temp) + "°C";
-               i1.innerHTML   = '<img src="/icons/'+ data.list[0].weather[0].icon + '.svg">'
-               i2.innerHTML   = '<img src="/icons/'+ data.list[1].weather[0].icon + '.svg">'
-               i3.innerHTML   = '<img src="/icons/'+ data.list[2].weather[0].icon + '.svg">'
-               i4.innerHTML   = '<img src="/icons/'+ data.list[3].weather[0].icon + '.svg">'
-               i5.innerHTML   = '<img src="/icons/'+ data.list[4].weather[0].icon + '.svg">'
-               i6.innerHTML   = '<img src="/icons/'+ data.list[5].weather[0].icon + '.svg">'
-               i7.innerHTML   = '<img src="/icons/'+ data.list[6].weather[0].icon + '.svg">'
-               i8.innerHTML   = '<img src="/icons/'+ data.list[7].weather[0].icon + '.svg">'                             
+               i1.innerHTML   = '<img src="./icons/'+ data.list[0].weather[0].icon + '.svg">'
+               i2.innerHTML   = '<img src="./icons/'+ data.list[1].weather[0].icon + '.svg">'
+               i3.innerHTML   = '<img src="./icons/'+ data.list[2].weather[0].icon + '.svg">'
+               i4.innerHTML   = '<img src="./icons/'+ data.list[3].weather[0].icon + '.svg">'
+               i5.innerHTML   = '<img src="./icons/'+ data.list[4].weather[0].icon + '.svg">'
+               i6.innerHTML   = '<img src="./icons/'+ data.list[5].weather[0].icon + '.svg">'
+               i7.innerHTML   = '<img src="./icons/'+ data.list[6].weather[0].icon + '.svg">'
+               i8.innerHTML   = '<img src="./icons/'+ data.list[7].weather[0].icon + '.svg">'                             
                
             });
      });
