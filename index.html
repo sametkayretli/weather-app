@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <title>Hava Durumu</title>
+</head>
+<body>
+   <div class="container">
+
+      <nav class="navbar navbar-light bg-light justify-content-around">
+         <p id="time"></p>
+         <p id="date"></p>
+       </nav>
+
+      
+      <div class="container">
+         <div class="first row">
+            <div id="location" class="col-6"></div>
+            <div class="col-3">
+               <div class="row">
+                  <div class="col-9">
+                     <h2><span id="temp"></span></h2>
+                  </div>
+                  <div class="col-3">
+                  </div>
+               </div>
+            </div>
+            <div class="col-3"><p id="weather-icon"></p></div>
+         </div>
+         <div class="second row">
+            <div class="col-3">
+               <ul>
+                  <li><span class="bold">Gün Doğumu: </span><span id="sunrise"></span></li>
+                  <li><span class="bold">Gün Batımı: </span><span id="sunset"></span></li>
+               </ul>
+            </div>
+            <div class="col-6">
+               <div class="row">
+                  <div class="col-4">
+                     <ul>
+                        <li><span class="bold">Nüfus:</span><span id="population"></span></li>
+                        <li><span class="bold">Nem:</span><span id="humidity"></span></li>
+                     </ul>
+                  </div>
+                  <div class="col-6">
+                     <ul> 
+                        <li><span class="bold">Basınç:</span><span id="pressure"></span></li>
+                        <li><span class="bold">Rüzgar:</span><span id="wind"></span></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-3"><p id="description" class="text-capitalize" >Hava durumu</p></div>
+         </div>
+         <div class="third row justify-content-around">
+            <div class="col-1">
+               <p id="s1"></p>
+               <p id="i1"></p>
+               <p id="d1"></p> 
+            </div>
+            <div class="col-1">
+               <p id="s2"></p>
+               <p id="i2"></p>
+               <p id="d2"></p>
+            </div>
+            <div class="col-1">
+               <p id="s3"></p>
+               <p id="i3"></p>
+               <p id="d3"></p>
+            </div>
+            <div class="col-1">
+               <p id="s4"></p>
+               <p id="i4"></p>
+               <p id="d4"></p>
+            </div>
+            <div class="col-1">
+               <p id="s5"></p>
+               <p id="i5"></p>
+               <p id="d5"></p>
+            </div>
+            <div class="col-1">
+               <p id="s6"></p>
+               <p id="i6"></p>
+               <p id="d6"></p>
+            </div>
+            <div class="col-1">
+               <p id="s7"></p>
+               <p id="i7"></p>
+               <p id="d7"></p>
+            </div>
+            <div class="col-1">
+               <p id="s8"></p>
+               <p id="i8"></p>
+               <p id="d8"></p>
+            </div>
+         </div>
+      </div>
+   </div>
+  
+   <script src="app.js"></script>
+</body>
+</html>
