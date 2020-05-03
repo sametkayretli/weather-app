@@ -30,6 +30,8 @@ li{
 .third{
    height: 35vh;
    font-weight: 700;
+   align-items: center;
+   text-align: center;
 }
 
 .bold{
